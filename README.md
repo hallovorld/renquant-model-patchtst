@@ -2,6 +2,17 @@
 
 PatchTST/PatchTXT and sequence-model repository for RenQuant.
 
+Operating model: https://github.com/hallovorld/RenQuant/blob/main/doc/arch/subrepo-operating-model.md
+
+Repository map: [RENQUANT_REPOS.md](RENQUANT_REPOS.md)
+
+Local automation:
+
+```bash
+make test
+make doctor
+```
+
 This repo owns sequence-model train/score/validate workflows and shadow
 candidate artifacts. It does not own production decision-tree logic, broker
 execution, GBDT training internals, raw data, or unchecked experiment dumps.
